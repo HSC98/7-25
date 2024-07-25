@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script lang="java">
+        $(function(){
+            $("#box").fullpage({
+                sectionsColor:["red", "gray", "pink", "green", "blue"],
+                slidesNavigation:true,
+                slidesNavPosition:"top",
+
+            })
+        })
+    </script>
+
+    <style type="text/css">
+        #box2 > div{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="section" id="box1">
+            <h1>section01</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repellat reiciendis, explicabo illum
+                laborum consectetur totam quisquam necessitatibus nam veniam beatae voluptatem doloribus accusantium
+                doloremque cum et similique? Ducimus, rem.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repellat reiciendis, explicabo illum
+                laborum consectetur totam quisquam necessitatibus nam veniam beatae voluptatem doloribus accusantium
+                doloremque cum et similique? Ducimus, rem.
+            </p>
+        </div>
+
+        <div class="section" id="box2">
+            <div class="slide"><h2>slide1</h2></div>
+            <div class="slide"><h2>slide2</h2></div>
+            <div class="slide"><h2>slide3</h2></div>
+            <div class="slide"><h2>slide4</h2></div>
+            <div class="slide"><h2>slide5</h2></div>
+        </div>
+        <div class="section" id="box3">
+            <div class="slide"><h2>slide1</h2></div>
+            <div class="slide"><h2>slide2</h2></div>
+            <div class="slide"><h2>slide3</h2></div>
+            <div class="slide"><h2>slide4</h2></div>
+            <div class="slide"><h2>slide5</h2></div>
+        </div>
+    </div>
+</body>
+
+</html>
